@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Inch To Millimeter</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Inch</label>
+            <input id="input" type="number" placeholder="Inch" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Millimeter: <span id="outputmilli"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputmilli").innerHTML = valNum * 25.4;
+        }
+    </script>
+
+</body></html>
